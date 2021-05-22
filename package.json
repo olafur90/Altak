@@ -1,0 +1,25 @@
+{
+  "name": "Altak",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "browser-sync": "^2.26.14",
+    "node-sass": "^6.0.0",
+    "sass": "^1.34.0",
+    "sass-watch": "^0.1.0"
+  },
+  "devDependencies": {
+    "concurrently": "^6.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently npm:browser-sync npm:sass-watch",
+    "browser-sync": "browser-sync start --server --files index.html styles.css",
+    "sass": "node-sass styles/styles.scss styles.css",
+    "sass-watch": "node-sass -w --source map-embed --watch styles/*.scss --recursive styles.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
