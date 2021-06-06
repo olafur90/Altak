@@ -5,4 +5,71 @@
     margin: 0;
     padding: 0;
     font-size: $baseFontSize;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body {
+    background-color: rgb(214, 219, 218);
+}
+
+.mainContent, .secondaryContent {
+    text-align: center;
+    background-color: rgb(214, 214, 214);
+    padding: 20px 0;
+    padding-bottom: 2rem;
+    overflow: hidden;
+    margin:0;
+    text-align: left;
+    border:1px solid black;
+
+    h1 {
+        padding-right: 15%;
+        margin-top: 20px;
+        font-size: 1.5rem;
+    }
+
+    img {
+        width: 100%;
+    }
+}
+.secondaryContent {
+    background-color: #a9adac;
+    margin-bottom: 3rem;
+    border-top:none;
+    
+}
+.mainContent {
+    border-bottom: none;
+}
+.text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+hr {
+    height: 2px;
+}
+.kaeli {
+    display:flex;
+    background-image: url("img/bannerinn.jpg");
+    background-repeat: no-repeat;
+    object-fit: initial;
+    align-items:center;
+    justify-content:center;
+    color: white;
+    font-size: 4rem;
+    width: 100%;
+    height: 400px;
+
+    img {
+        object-fit: fill;
+    }
+
+    p {
+        font-size: 2rem;
+        padding:0;
+        padding-top: 20%;
+        margin:0;
+    }
 }
