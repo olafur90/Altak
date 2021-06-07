@@ -14,10 +14,9 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "concurrently npm:browser-sync npm:sass-watch",
+    "dev": "concurrently npm:browser-sync npm:sass",
     "browser-sync": "browser-sync start --server --files index.html styles.css",
-    "sass": "node-sass styles/styles.scss styles.css",
-    "sass-watch": "node-sass -w --source map-embed --watch styles/*.scss --recursive styles.css"
+    "sass": "node-sass styles/styles.scss styles.css --watch --source map-embed --recursive"
   },
   "keywords": [],
   "author": "",

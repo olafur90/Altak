@@ -1,6 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Prata&display=swap');
 footer {
     height: 10vh;
     background-color: rgb(66, 66, 66);
+    padding: auto;
     
     li {
         color: rgb(212, 212, 212);
@@ -12,26 +14,34 @@ footer {
     }
     h3 {
         text-align: center;
-        font-size: 12px;
+        font-size: 1rem;
+        font-family: 'Prata';
     }
     a {
         color: rgb(212, 212, 212);
-        font-size: 12px;
+        font-size: 1rem;
+        font-family: 'Prata';
     }
     p {
         text-align: center;
         margin-top: 10px;
-        font-size: 12px;
+        font-size: 1rem;
         color: rgb(212, 212, 212);
+        font-family: 'Prata';
     }
 
     hr {
         background-color: black;
         height: 1px;
     }
+    ul {
+        margin: auto;
+    }
+    
 }
 
 i {
     color: rgb(0, 0, 0);
     margin-right: 5px;
+    font-size: 1rem;
 }

@@ -1,30 +1,25 @@
 @import 'config';
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
 
 * {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
     font-size: $baseFontSize;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body {
-    background-color: rgb(214, 219, 218);
+    background-color: rgb(40, 40, 40);
 }
 
 .mainContent, .secondaryContent {
-    text-align: center;
     background-color: rgb(214, 214, 214);
     padding: 20px 0;
-    padding-bottom: 2rem;
-    overflow: hidden;
-    margin:0;
-    text-align: left;
-    border:1px solid black;
+    margin-top: 0;
+    font-family:'Anton';
+    font-size: 1.5rem;
 
     h1 {
-        padding-right: 15%;
-        margin-top: 20px;
         font-size: 1.5rem;
     }
 
@@ -32,14 +27,15 @@ body {
         width: 100%;
     }
 }
-.secondaryContent {
-    background-color: #a9adac;
-    margin-bottom: 3rem;
-    border-top:none;
-    
-}
 .mainContent {
-    border-bottom: none;
+    margin-top: 5rem;
+    &:nth-of-type(3) {
+        margin-top: 0;
+        margin-bottom: 5rem;
+    }
+}
+.secondaryContent {
+    background-color: #bdbdbd;
 }
 .text {
     display: flex;
@@ -47,29 +43,20 @@ body {
     align-items: center;
 }
 
-hr {
-    height: 2px;
-}
 .kaeli {
-    display:flex;
-    background-image: url("img/bannerinn.jpg");
-    background-repeat: no-repeat;
-    object-fit: initial;
-    align-items:center;
-    justify-content:center;
-    color: white;
-    font-size: 4rem;
-    width: 100%;
-    height: 400px;
+    position: relative;
+    text-align: center;
 
-    img {
-        object-fit: fill;
+    img { 
+        width: 100%;
     }
 
     p {
         font-size: 2rem;
-        padding:0;
-        padding-top: 20%;
-        margin:0;
+        color: white;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -70%);
     }
 }

@@ -1,12 +1,19 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Prata&display=swap');
 ul li {
     display:inline-block;
     list-style-type: none;
     margin: 0 5px;
+    margin-top: 10px;
     height: 100%;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 a {
     text-decoration: none;
     color: #111514;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family:'Prata';
+    font-size: 1.1rem;
+}
+.active {
+    font-weight: bold;
 }
