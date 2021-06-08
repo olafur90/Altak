@@ -1,4 +1,4 @@
-
+@import 'config';
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Prata&display=swap');
 ul li {
     display:inline-block;
@@ -13,7 +13,15 @@ a {
     color: #111514;
     font-family:'Prata';
     font-size: 1.1rem;
-}
-.activeNavItem {
-    font-weight: bold;
+
+    &:hover {
+        color: $active-link-color;
+    }
+
+    &.activeNavItem {
+        font-weight: bold;
+        color: $active-link-color;
+        font-size: 1.15rem;
+        border-bottom: 2.5px solid darken($active-link-color, 8%);
+    }
 }

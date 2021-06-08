@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <title>Vélsmiðjan Altak</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/5.8.1/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -36,8 +37,9 @@
       </header>
       <img src="img/kaeliTheysta.jpg" class="banner">
 
+      <hr>
 
-      <div class="grid">
+      <div class="grid section">
         <div class="row mainContent">
           <div class="col col-3 offset-col-1 text">
             <h1>Altak hefur mikla reynslu af uppsetningu og viðhaldi kæliturna.</h1>
@@ -50,10 +52,21 @@
               <div class="col col-2">
                 
               </div>
-              <div class="col col-8 kaeli">
-                <a href="#"><img src="img/bannerinn.jpg">
-                <p>Kæliturnar</p></a>
+
+              <div class="col col-8 slideshow-container">
+                <div class="mySlides2 fade">
+                  <img src="img/kaeliturn.jpg">
+                </div>
+
+                <div class="mySlides2 fade">
+                  <img src="img/bannerinn.jpg">
+                </div>
+
+                <div class="mySlides2 fade">
+                  <img src="img/Kæliturn Þeystareykjum.jpg">
+                </div>
               </div>
+
               <div class="col col-2">
                 
               </div>
@@ -70,15 +83,15 @@
               <div class="col col-8 slideshow-container">
 
                 <div class="mySlides fade">
-                  <img src="img/pipa.jpg">
+                  <img src="img/stigi1.jpg">
                 </div>
 
                 <div class="mySlides fade">
-                  <img src="img/lokar.jpg">
+                  <img src="img/stigi2.jpg">
                 </div>
 
                 <div class="mySlides fade">
-                  <img src="img/neistar.jpg">
+                  <img src="img/stigi3.jpg">
                 </div>
 
               </div>
@@ -86,33 +99,26 @@
             </div>
           </div>
           <div class="col col-3 text">
-            <h1>Við tökum að okkur alls kyns stálvinnu, hvort sem það eru stálgrindur, lagnir, stálstigar, handrið og fleira</h1>
+            <h1>Við höfum reynslu í smíði og uppsetningu allra tegunda stálstiga</h1>
           </div>
           <div class="col col-2">
 
           </div>
         </div>
+
+
         <div class="row mainContent">
           <div class="col col-3 offset-col-1 text">
-            <h1>Einnig höfum við unnið með borholurnar</h1>
+            <h1>Við tökum að okkur alla almenna smíði með ryðfríu stáli</h1>
           </div>
-          <div class="col col-1">
-
+          <div class="col col-7">
+              <div class="stainless">
+                  <img src="img/pipaRydfri.jpg">
+                  <img src="img/handridRydfri.png">
+                  <img src="img/profilarRydfriir.jpg">
+              </div>
           </div>
-          <div class="col col-6">
-            <div class="row">
-              <div class="col col-2">
-                
-              </div>
-              <div class="col col-8 kaeli">
-                <a href="#"><img src="img/hola.jpg">
-              </div>
-              <div class="col col-2">
-                
-              </div>
-            </div>
-          </div>
-          <div class="col col-1">
+          <div class="col col-2">
             
           </div>
           
@@ -120,18 +126,23 @@
       </div>
     </main>
 
+    <hr>
+
     <footer>
       <div class="grid">
-        <div class="row">
-          <div class="col col-2">
-          </div>
-          <div class="col col-8">
+        <div class="row contacts">
+          <div class="col col-8 offset-col-2">
             <ul>
               <li><h3><a href="#"><i class="fas fa-location-arrow"></i>Drangahrauni 1</a></h3></li>
-              <li><h3><i class="fas fa-phone"></i>555-5555</h3></li>
+              <li><h3>220 Hafnarfirði</h3></li>
+              <li><h3><i class="fas fa-phone"></i>(+354) 577-7090</h3></li>
               <li><h3><a href="#"><i class="fas fa-envelope-square"></i>alt@alt.is</a></h3></li>
             </ul>
-            
+          </div>
+          <div class="col col-2 fb">
+            <img src="img/facebook.png">
+            <img src="img/instagram.png">
+            <img src="img/snapchat.png">
           </div>
         </div>
         
@@ -140,6 +151,7 @@
     </footer>
     <script src="../dist/bundle.js"></script>
     <script src="scripts/main.js"></script>
+    <script src="scripts/slideshow.js"></script>
 </body>
 
 </html>

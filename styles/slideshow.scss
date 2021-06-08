@@ -3,10 +3,11 @@
     margin: auto;
     display:flex;
     align-items: center;
+    overflow: hidden;
 
     img {
         height: 20rem;
-        border: 1px solid black;
+        border: 1px transparent;
         border-radius: 2%;
     }
 }
@@ -69,9 +70,10 @@
 }
 .fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 2s;
+    -webkit-animation-duration: 1.5s;
     animation-name: fade;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
+
 }
 @-webkit-keyframes fade {
     from {opacity: .4}
@@ -80,4 +82,29 @@
 @keyframes fade {
     from {opacity: .4}
     to {opacity: 1}
+}
+
+.slide {
+    position: relative;
+    left: -110%;
+    width: 100%;
+    -webkit-animation: slide 1s forwards;
+    -webkit-animation-delay: 0s;
+    animation: slide 1s forwards;
+    animation-delay: 0s;
+
+    
+}
+@-webkit-keyframes slide {
+    100% {left: 0; }
+}
+@keyframes slide {
+    100% {left: 0; }
+}
+
+.slideshow-container {
+    img {
+        border: 2px solid black;
+        border-radius: 2%;
+    }
 }

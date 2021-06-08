@@ -178,15 +178,12 @@ body {
   font-family: 'Anton';
   font-size: 1.5rem; }
   .mainContent h1, .secondaryContent h1 {
-    font-size: 1.5rem; }
+    font-size: 1.8rem; }
   .mainContent img, .secondaryContent img {
     width: 100%; }
 
-.mainContent {
-  margin-top: 5rem; }
-  .mainContent:nth-of-type(3) {
-    margin-top: 0;
-    margin-bottom: 5rem; }
+.mainContent:nth-of-type(3) {
+  margin-top: 0; }
 
 .secondaryContent {
   background-color: #bdbdbd; }
@@ -209,6 +206,26 @@ body {
     left: 50%;
     transform: translate(-50%, -70%); }
 
+hr {
+  width: 80%;
+  border-color: #5b5b5b;
+  margin: 1.5rem auto; }
+
+.widthBig {
+  width: 150%; }
+
+.section {
+  border: 2px solid black; }
+
+.stainless {
+  display: flex;
+  justify-content: space-between;
+  margin-right: 1rem; }
+  .stainless img {
+    width: 32%;
+    border: 2px solid black;
+    border-radius: 5px; }
+
 ul li {
   display: inline-block;
   list-style-type: none;
@@ -222,14 +239,19 @@ a {
   color: #111514;
   font-family: 'Prata';
   font-size: 1.1rem; }
-
-.activeNavItem {
-  font-weight: bold; }
+  a:hover {
+    color: #5a6d67; }
+  a.activeNavItem {
+    font-weight: bold;
+    color: #5a6d67;
+    font-size: 1.15rem;
+    border-bottom: 2.5px solid #485752; }
 
 footer {
-  height: 10vh;
-  background-color: #424242;
-  padding: auto; }
+  background-color: #494949;
+  margin-top: 2.2rem;
+  padding: auto;
+  padding-bottom: 0; }
   footer li {
     color: #d4d4d4;
     margin: 0 10px; }
@@ -246,7 +268,8 @@ footer {
   footer p {
     text-align: center;
     margin-top: 10px;
-    font-size: 1rem;
+    margin-bottom: 10px;
+    font-size: .8rem;
     color: #d4d4d4;
     font-family: 'Prata'; }
   footer hr {
@@ -256,9 +279,23 @@ footer {
     margin: auto; }
 
 i {
-  color: black;
+  color: #1e1e1e;
   margin-right: 5px;
   font-size: 1rem; }
+
+.contacts {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.fb {
+  margin: auto;
+  display: flex; }
+  .fb img {
+    width: 15%;
+    margin: 0 .2rem; }
+    .fb img:last-of-type {
+      margin-left: .5rem; }
 
 header {
   background-color: #f3f3f3;
@@ -283,19 +320,15 @@ header {
   margin-left: 2.5rem;
   margin-bottom: 1rem; }
 
-/*-webkit-filter: grayscale(0%);
-    filter: grayscale(0%);
-    transition: filter ease-in-out 1000ms;
-    -webkit-filter: grayscale(100%);
-    filter: grayscale(100%);*/
 .slideshow-container {
   position: relative;
   margin: auto;
   display: flex;
-  align-items: center; }
+  align-items: center;
+  overflow: hidden; }
   .slideshow-container img {
     height: 20rem;
-    border: 1px solid black;
+    border: 1px transparent;
     border-radius: 2%; }
 
 .mySlides {
@@ -355,9 +388,9 @@ header {
 
 .fade {
   -webkit-animation-name: fade;
-  -webkit-animation-duration: 2s;
+  -webkit-animation-duration: 1.5s;
   animation-name: fade;
-  animation-duration: 2s; }
+  animation-duration: 1.5s; }
 
 @-webkit-keyframes fade {
   from {
@@ -370,3 +403,24 @@ header {
     opacity: .4; }
   to {
     opacity: 1; } }
+
+.slide {
+  position: relative;
+  left: -110%;
+  width: 100%;
+  -webkit-animation: slide 1s forwards;
+  -webkit-animation-delay: 0s;
+  animation: slide 1s forwards;
+  animation-delay: 0s; }
+
+@-webkit-keyframes slide {
+  100% {
+    left: 0; } }
+
+@keyframes slide {
+  100% {
+    left: 0; } }
+
+.slideshow-container img {
+  border: 2px solid black;
+  border-radius: 2%; }
