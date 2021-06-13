@@ -1,4 +1,4 @@
-@keyframes greyscale-fade-in {
+@keyframes greyscale-fade-out {
     0% { -webkit-filter: grayscale(80%); }
     100% { -webkit-filter: grayscale(0%); }
     0% { -webkit-filter: grayscale(80%); }
@@ -7,10 +7,12 @@
 .banner {
     height: 100%;
     width: 100%;
-    animation: greyscale-fade-in 3s ease-in-out ;
+    animation: greyscale-fade-out 5s ease-out;
+    border-top: 1px solid rgb(134, 134, 134);
+    border-bottom: 1px solid rgb(134, 134, 134);
 }
 .logo {
-    width: 40%;
+    width: 100%;
     margin-left: 2.5rem;
     margin-bottom: 1rem;
 }

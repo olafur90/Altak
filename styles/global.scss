@@ -80,3 +80,32 @@ hr {
         border-radius: 5px;
     }
 }
+.tester {
+    display: flex;
+    flex-direction: row;
+}
+.mynd {
+    display: flex;
+    flex-direction: column;
+    object-fit: contain;
+
+    h2 {
+        text-align: center;
+    }
+
+    img {
+        object-fit: contain;
+    }
+}
+.smari {
+    display: flex;
+    flex-direction: row;
+
+    img {
+        width: 25%;
+    }
+}
+.about {
+    margin-top: 2rem;
+    padding: 1rem;
+}
